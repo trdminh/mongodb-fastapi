@@ -7,7 +7,8 @@ from schema.schema import StudentCollection
 from bson import ObjectId
 
 
-router = APIRouter()
+router = APIRouter(
+    )
 
 @router.get('/student',
             response_description="List all students",
